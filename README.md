@@ -12,5 +12,11 @@ Mario Gazziro suggested the name shin (new) JAMMA. The 56 pin JAMMA connector in
 ## Planned Boards
 
 - Terasic DE0
+- Terasic DE0-CV
+- Terasic DE0-Lite
+- Terasic DE10-Nano
+- Terasic DE2-70
+- Terasic DE2-115
+- SiPeed Tango Nano 20K
 - Xess XSA100
 - Xilinx ML401
