@@ -4,11 +4,20 @@
 
 An FPGA based board named "board" will have three files associated with it:
 
-- board.v: implements the actual adaptor component
-- board.md: documents the different options available
-- board.ucf, board.xdc, board.qsf: constraint file defining which FPGA pins are connected to which parts of the board
+- **board.v**: implements the actual adaptor component
+- **board.md**: documents the different options available
+- **board.ucf, board.xdc, board.qsf**: constraint file defining which FPGA pins are connected to which parts of the board
+
+A typical use of this repository is to place it in the directory in which the
+actual project is a subdirectory. This allows the board and constraint files to
+be included in the top level of the project as **../shim_jamma/board.v** and **./shim_jamma/board.qsf**, for example. While **top.v** is a popular name for the main
+file in a project, an alternative is to use **fpga_project_board.v** to make explicit which project and board are being used.
 
 ![file relationship](files.svg)
+
+Many systems will have devices connected to the FPGA board. That doesn't directly
+change the pins of the FPGA but the adaptor should include options to make use
+of these external devices.
 
 ## System Pins
 
@@ -85,7 +94,7 @@ Bits 5:0 indicate which error happened or how many bytes are available for
 reading or how much space is available for writing. The maximum number of 63
 means "63 or more".
 
-This high level interface is not too different from what some late 1980s
+This high level interface is not too different from what some late 1970s
 microcomputers (like the Atari 800 or the Commodore Pet) did. This does require
 considerable FPGA resources to implement compared to a simple SD Card interface.
 By default this interface simply returns an error for all commands.
