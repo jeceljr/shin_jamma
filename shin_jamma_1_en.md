@@ -8,7 +8,7 @@ An FPGA based board named "board" will have three files associated with it:
 - board.md: documents the different options available
 - board.ucf, board.xdc, board.qsf: constraint file defining which FPGA pins are connected to which parts of the board
 
-[file relationship](files.svg)
+![file relationship](files.svg)
 
 ## System Pins
 
