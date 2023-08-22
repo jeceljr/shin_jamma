@@ -12,34 +12,34 @@ An FPGA based board named "board" will have three files associated with it:
 
 ## System Pins
 
-clock50MHz, resetn
+clock50MHz_o, resetn_o
 
 ## AV Pins
 
-left[15:0], right[15:0], audioclk
+left_i[15:0], right_i[15:0], audioclk_i
 
-green[9:0], red[9:0], vsync, hsync, blue[9:0], pixelclk
+green_i[9:0], red_i[9:0], vsync_i, hsync_i, blue_i[9:0], pixelclk_i
 
 ## Player Pins
 
-p1select, p1start, p1up, p1down, p1left, p1right, p1button1, p1button2, p1button3, p1button4
+p1select_o, p1start_o, p1up_o, p1down_o, p1left_o, p1right_o, p1button1_o, p1button2_o, p1button3_o, p1button4_o
 
-p2select, p2start, p2up, p2down, p2left, p2right, p2button1, p2button2, p2button3, p2button4
+p2select_o, p2start_o, p2up_o, p2down_o, p2left_o, p2right_o, p2button1_o, p2button2_o, p2button3_o, p2button4_o
 
 For mouse or trackball up, down, left and right become Ydir, Yclk, Xdir and Xclk respectively.
 
 ## Keyboard Pins
 
-strobe, key_din[7:0]
+strobe_o, key_d_o[7:0]
 
 ## Simple I/O Pins
 
-switch[15:0], led[15:0], seg[63:0]
+switch_o[15:0], led_i[15:0], seg_i[63:0]
 
 ## External Memory Pins
 
-mem_read, mem_write, mem_rdy, mem_addr[31:0], mem_din[31:0], mem_dout[31:0]
+mem_read_i, mem_write_i, mem_rdy_o, mem_addr_i[31:0], mem_d_i[31:0], mem_d_o[31:0]
 
 ## File System Pins
 
-file_read, file_write, file_cmd, file_din[7:0], file_dout[7:0]
+file_read_i, file_write_i, file_cmd_i, file_d_i[7:0], file_d_o[7:0]
