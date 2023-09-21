@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -110,12 +110,12 @@
        x="65.870056"
        y="87.288925" />
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.1777457;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect45"
-       width="20.320398"
-       height="36.64521"
-       x="113.01794"
-       y="86.718124" />
+       width="20.08239"
+       height="16.734291"
+       x="113.02287"
+       y="86.723068" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26955548;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 113.17978,91.641689 H 93.707752"
@@ -191,17 +191,6 @@
          x="68.805099"
          y="84.222069"
          style="stroke-width:0.26458332px">project.v</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:100%;font-family:cmr10;-inkscape-font-specification:cmr10;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="98.381485"
-       y="84.382843"
-       id="text4595"><tspan
-         sodipodi:role="line"
-         id="tspan4593"
-         x="98.381485"
-         y="84.382843"
-         style="stroke-width:0.26458332px">../shin_jamma/board.v</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4597"
@@ -404,14 +393,14 @@
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 133.11021,106.35482 13.24467,21.31325"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.21799135px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.25198,111.83537 12.1029,15.8327"
        id="path4669"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
     <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 133.26245,114.804 5.40443,13.47303"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.29450899px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 127.71027,119.99572 10.91464,8.26567"
        id="path4671"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
@@ -432,6 +421,53 @@
          id="tspan4675"
          x="78.409142"
          y="-148.40965"
-         style="stroke-width:0.26458332px">../shin_jamma/board.qsf</tspan></text>
-  </g>
+         style="stroke-width:0.26458332px">project_board.qsf</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.21962494;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1023"
+       width="20.862953"
+       height="5.8756504"
+       x="113.38904"
+       y="105.95972" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.271;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1025"
+       width="14.578308"
+       height="9.1785021"
+       x="113.12746"
+       y="115.44482" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1027"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:100%;font-family:cmr10;-inkscape-font-specification:cmr10;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.34201276,0,0,0.3689981,7.9173603,47.900277)"><flowRegion
+         id="flowRegion1029"><rect
+           id="rect1031"
+           width="75.327606"
+           height="23.387051"
+           x="322.55182"
+           y="121.29001" /></flowRegion><flowPara
+         id="flowPara1033">KAV adapter</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1035"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:100%;font-family:cmr10;-inkscape-font-specification:cmr10;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.26458333,0,0,0.26458333,32.252835,60.311563)"><flowRegion
+         id="flowRegion1037"><rect
+           id="rect1039"
+           width="78.852066"
+           height="22.207193"
+           x="323.34271"
+           y="175.40538" /></flowRegion><flowPara
+         id="flowPara1041">mem</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1043"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:100%;font-family:cmr10;-inkscape-font-specification:cmr10;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.26458333,0,0,0.26458333,31.33941,61.833938)"><flowRegion
+         id="flowRegion1045"><rect
+           id="rect1047"
+           width="55.099068"
+           height="34.690399"
+           x="322.3541"
+           y="211.25459" /></flowRegion><flowPara
+         id="flowPara1049">FAT</flowPara></flowRoot>  </g>
 </svg>

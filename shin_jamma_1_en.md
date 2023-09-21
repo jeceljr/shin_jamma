@@ -2,44 +2,40 @@
 
 ## Files
 
-An FPGA based board named "board" will have three files associated with it:
-
-- **board.v**: implements the actual adaptor component
-- **board.md**: documents the different options available
-- **board.ucf, board.xdc, board.qsf**: constraint file defining which FPGA pins are connected to which parts of the board
-
-A typical use of this repository is to place it in the directory in which the
-actual project is a subdirectory. This allows the board and constraint files to
-be included in the top level of the project as **../shim_jamma/board.v** and **./shim_jamma/board.qsf**, for example. While **top.v** is a popular name for the main
-file in a project, an alternative is to use **fpga_project_board.v** to make explicit which project and board are being used.
+An FPGA based board named "board" will have a file named **board.json** which
+includes all the information needed by the Shin JAMMA web page to generate a
+file like **fpga_project_board.v** as well as any project and constraint files (like **project_board.qsf** in this example).
 
 ![file relationship](files.svg)
 
-Many systems will have devices connected to the FPGA board. That doesn't directly
-change the pins of the FPGA but the adaptor should include options to make use
-of these external devices.
+The generated file will include copies of adaptor block modules as needed defined in
+the same place as the json file.
+
+The the top module in the selected user project file (**project.v** in this example)
+must include some of the following pins with the indicated names (those ending in
+_i are inputs of module project while those ending in _o are outputs)
 
 ## System Pins
 
-clock50MHz_o, resetn_o
+clock50MHz_i, resetn_i
 
 ## AV Pins
 
-left_i[15:0], right_i[15:0], audioclk_i
+left_o[15:0], right_o[15:0], audioclk_o
 
-green_i[9:0], red_i[9:0], vsync_i, hsync_i, blue_i[9:0], pixelclk_i
+green_o[9:0], red_o[9:0], vsync_o, hsync_o, blue_o[9:0], pixelclk_o
 
 ## Player Pins
 
-p1select_o, p1start_o, p1up_o, p1down_o, p1left_o, p1right_o, p1button1_o, p1button2_o, p1button3_o, p1button4_o
+p1select_i, p1start_i, p1up_i, p1down_i, p1left_i, p1right_i, p1button1_i, p1button2_i, p1button3_i, p1button4_i
 
-p2select_o, p2start_o, p2up_o, p2down_o, p2left_o, p2right_o, p2button1_o, p2button2_o, p2button3_o, p2button4_o
+p2select_i, p2start_i, p2up_i, p2down_i, p2left_i, p2right_i, p2button1_i, p2button2_i, p2button3_i, p2button4_i
 
 For mouse or trackball up, down, left and right become Ydir, Yclk, Xdir and Xclk respectively.
 
 ## Keyboard Pins
 
-strobe_o, key_d_o[7:0]
+strobe_i, key_d_i[7:0]
 
 The strobe signal goes high to indicate an updated value on key_d and remains
 high for at least 8 cycles of the 50MHz clock. key_d[7] is low to indicate a
@@ -48,7 +44,7 @@ ASCII character associated with the key or a special code.
 
 ## Simple I/O Pins
 
-switch_o[15:0], led_i[15:0], seg_i[63:0]
+switch_i[15:0], led_o[15:0], seg_o[63:0]
 
 Up to eight 7 segment displays are supported, which are actually 8 segments
 when the dot is included. The segment number plus 8 times the digit number
@@ -56,7 +52,7 @@ is the bit to be illuminated.
 
 ## External Memory Pins
 
-mem_read_i, mem_write_i, mem_rdy_o, mem_addr_i[31:0], mem_d_i[31:0], mem_d_o[31:0]
+mem_read_o, mem_write_o, mem_rdy_i, mem_addr_o[31:0], mem_d_o[31:0], mem_d_i[31:0]
 
 Up to 4GB of external memory may be mapped to this interface. Any writes to
 unmapped addresses are discarded while any reads from such regions return zero.
@@ -67,7 +63,7 @@ the user's project.
 
 ## File System Pins
 
-file_read_i, file_write_i, file_cmd_i, file_d_i[7:0], file_d_o[7:0]
+file_read_o, file_write_o, file_cmd_o, file_d_o[7:0], file_d_i[7:0]
 
 When file_cmd is high data is written to the command register or read from
 the status register. That signal is low for normal data transfers.
