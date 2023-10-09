@@ -95,3 +95,11 @@ microcomputers (like the Atari 800 or the Commodore Pet) did. This does require
 considerable FPGA resources to implement compared to a simple SD Card interface.
 By default this interface simply returns an error for all commands.
 
+File names are always the whole path with "/" as subdirectory separators. In
+the case of subdirectories they can be passed with either a trailing slash or
+not. Without it, the returned bytes are the raw contents of the directory but
+with the trailing slash the full names of the files it contains are returned,
+one per line. So the empty string is the raw root directory while "/" is
+the list of names in the root with any subdirectories showing a trailing slash
+to indicate this information.
+
