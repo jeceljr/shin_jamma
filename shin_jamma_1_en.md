@@ -54,7 +54,7 @@ is the bit to be illuminated.
 
 mem_read_o, mem_write_o, mem_rdy_i, mem_addr_o[31:0], mem_d_o[31:0], mem_d_i[31:0]
 
-Up to 4GB of external memory may be mapped to this interface. Any writes to
+Up to 16GB of external memory may be mapped to this interface. Any writes to
 unmapped addresses are discarded while any reads from such regions return zero.
 
 SDRAM controllers, specially for recent DDR variations, can be very complex and
