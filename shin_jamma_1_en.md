@@ -71,7 +71,7 @@ the status register. That signal is low for normal data transfers.
 Bits 7:4 of the command register indicate the selected command to be executed
 while bits 3:0 select between up to 16 different files.
 
-| 7:3 | command | data | operation |
+| 7:4 | command | data | operation |
 |-----|---------|---------|-----------|
 | 0 | NOP | | does nothing, but will cancel any command in progress |
 | 1 | OPEN | string0 | will open the named file |
