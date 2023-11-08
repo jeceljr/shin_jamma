@@ -164,79 +164,6 @@
       <pos x="1600" y="180"/>
     </visualElement>
     <visualElement>
-      <elementName>LedMatrix</elementName>
-      <elementAttributes>
-        <entry>
-          <string>ledPersistence</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>left</string>
-        </entry>
-        <entry>
-          <string>colAddrBits</string>
-          <int>5</int>
-        </entry>
-        <entry>
-          <string>rowDataBits</string>
-          <int>16</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1840" y="260"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LedMatrix</elementName>
-      <elementAttributes>
-        <entry>
-          <string>ledPersistence</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>right</string>
-        </entry>
-        <entry>
-          <string>colAddrBits</string>
-          <int>5</int>
-        </entry>
-        <entry>
-          <string>rowDataBits</string>
-          <int>16</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1840" y="360"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Counter</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>colsel</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>5</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1700" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes/>
-      <pos x="1660" y="320"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-      </elementAttributes>
-      <pos x="1660" y="360"/>
-    </visualElement>
-    <visualElement>
       <elementName>Tunnel</elementName>
       <elementAttributes>
         <entry>
@@ -778,12 +705,12 @@
       <elementName>Rectangle</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>keyboard</string>
-        </entry>
-        <entry>
           <string>RectHeight</string>
           <int>27</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>keyboard</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -796,12 +723,12 @@
       <elementName>DipSwitch</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>sw0</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>sw0</string>
         </entry>
       </elementAttributes>
       <pos x="1680" y="560"/>
@@ -1194,20 +1121,20 @@
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
-          <string>Input Splitting</string>
-          <string>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</string>
-        </entry>
-        <entry>
           <string>mirror</string>
           <boolean>true</boolean>
         </entry>
         <entry>
-          <string>Output Splitting</string>
-          <string>16</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>Input Splitting</string>
+          <string>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>16</string>
         </entry>
       </elementAttributes>
       <pos x="1640" y="560"/>
@@ -1249,16 +1176,16 @@
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
           <string>Input Splitting</string>
           <string>4</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
           <string>1,1,1,1</string>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
         </entry>
       </elementAttributes>
       <pos x="1680" y="980"/>
@@ -1267,20 +1194,20 @@
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
-          <string>Input Splitting</string>
-          <string>4</string>
-        </entry>
-        <entry>
           <string>mirror</string>
           <boolean>true</boolean>
         </entry>
         <entry>
-          <string>Output Splitting</string>
-          <string>1,1,1,1</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="1"/>
+        </entry>
+        <entry>
+          <string>Input Splitting</string>
+          <string>4</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1,1,1,1</string>
         </entry>
       </elementAttributes>
       <pos x="1680" y="1200"/>
@@ -1289,16 +1216,16 @@
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Input Splitting</string>
           <string>8</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
           <string>4,4</string>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
         </entry>
       </elementAttributes>
       <pos x="1680" y="1260"/>
@@ -1776,12 +1703,12 @@
       <elementName>Rectangle</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>simple i/o</string>
-        </entry>
-        <entry>
           <string>RectHeight</string>
           <int>48</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>simple i/o</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -1794,12 +1721,12 @@
       <elementName>RAMDualPort</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>exMem</string>
-        </entry>
-        <entry>
           <string>AddrBits</string>
           <int>16</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>exMem</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -1972,12 +1899,12 @@ Patch circuit for other options</string>
       <elementName>Rectangle</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>external memory</string>
-        </entry>
-        <entry>
           <string>RectHeight</string>
           <int>24</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>external memory</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -1985,6 +1912,31 @@ Patch circuit for other options</string>
         </entry>
       </elementAttributes>
       <pos x="1480" y="1580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>left</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1660" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>right</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1660" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Data</elementName>
+      <elementAttributes/>
+      <pos x="1760" y="240"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -2025,12 +1977,12 @@ Patch circuit for other options</string>
       <p2 x="1820" y="1920"/>
     </wire>
     <wire>
-      <p1 x="1600" y="260"/>
-      <p2 x="1840" y="260"/>
-    </wire>
-    <wire>
       <p1 x="260" y="260"/>
       <p2 x="360" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="1600" y="260"/>
+      <p2 x="1660" y="260"/>
     </wire>
     <wire>
       <p1 x="280" y="900"/>
@@ -2137,16 +2089,12 @@ Patch circuit for other options</string>
       <p2 x="2280" y="1300"/>
     </wire>
     <wire>
-      <p1 x="1800" y="280"/>
-      <p2 x="1840" y="280"/>
+      <p1 x="200" y="1560"/>
+      <p2 x="220" y="1560"/>
     </wire>
     <wire>
       <p1 x="1600" y="280"/>
-      <p2 x="1780" y="280"/>
-    </wire>
-    <wire>
-      <p1 x="200" y="1560"/>
-      <p2 x="220" y="1560"/>
+      <p2 x="1640" y="280"/>
     </wire>
     <wire>
       <p1 x="60" y="540"/>
@@ -2215,6 +2163,10 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="320" y="300"/>
       <p2 x="360" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="1640" y="300"/>
+      <p2 x="1660" y="300"/>
     </wire>
     <wire>
       <p1 x="60" y="940"/>
@@ -2307,14 +2259,6 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="1660" y="1980"/>
       <p2 x="1720" y="1980"/>
-    </wire>
-    <wire>
-      <p1 x="1760" y="320"/>
-      <p2 x="1800" y="320"/>
-    </wire>
-    <wire>
-      <p1 x="1660" y="320"/>
-      <p2 x="1700" y="320"/>
     </wire>
     <wire>
       <p1 x="120" y="320"/>
@@ -2437,10 +2381,6 @@ Patch circuit for other options</string>
       <p2 x="1980" y="1360"/>
     </wire>
     <wire>
-      <p1 x="1600" y="340"/>
-      <p2 x="1700" y="340"/>
-    </wire>
-    <wire>
       <p1 x="140" y="340"/>
       <p2 x="160" y="340"/>
     </wire>
@@ -2499,14 +2439,6 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="1640" y="1380"/>
       <p2 x="1880" y="1380"/>
-    </wire>
-    <wire>
-      <p1 x="1660" y="360"/>
-      <p2 x="1700" y="360"/>
-    </wire>
-    <wire>
-      <p1 x="1780" y="360"/>
-      <p2 x="1840" y="360"/>
     </wire>
     <wire>
       <p1 x="1620" y="1640"/>
@@ -2585,10 +2517,6 @@ Patch circuit for other options</string>
       <p2 x="1780" y="1400"/>
     </wire>
     <wire>
-      <p1 x="1800" y="380"/>
-      <p2 x="1840" y="380"/>
-    </wire>
-    <wire>
       <p1 x="280" y="380"/>
       <p2 x="360" y="380"/>
     </wire>
@@ -2657,16 +2585,8 @@ Patch circuit for other options</string>
       <p2 x="520" y="1600"/>
     </wire>
     <wire>
-      <p1 x="1800" y="280"/>
-      <p2 x="1800" y="320"/>
-    </wire>
-    <wire>
       <p1 x="1800" y="960"/>
       <p2 x="1800" y="1240"/>
-    </wire>
-    <wire>
-      <p1 x="1800" y="320"/>
-      <p2 x="1800" y="380"/>
     </wire>
     <wire>
       <p1 x="140" y="320"/>
@@ -3077,6 +2997,10 @@ Patch circuit for other options</string>
       <p2 x="1640" y="1800"/>
     </wire>
     <wire>
+      <p1 x="1640" y="280"/>
+      <p2 x="1640" y="300"/>
+    </wire>
+    <wire>
       <p1 x="2280" y="1000"/>
       <p2 x="2280" y="1020"/>
     </wire>
@@ -3111,10 +3035,6 @@ Patch circuit for other options</string>
     <wire>
       <p1 x="2160" y="1160"/>
       <p2 x="2160" y="1180"/>
-    </wire>
-    <wire>
-      <p1 x="1780" y="280"/>
-      <p2 x="1780" y="360"/>
     </wire>
     <wire>
       <p1 x="1780" y="1000"/>
